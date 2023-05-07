@@ -2,6 +2,7 @@ body,html {
     padding:0px;
     margin:0px;
     font-family: 'Comfortaa', cursive;
+    font-size: 20px;
     font-weight:bold;
     color:#000;
     background:rgb(255, 255, 255);
@@ -111,13 +112,13 @@ body,html {
 			display: inline-block;
 			margin: 10px;
 			padding: 10px;
-			background-color: #fff;
-			border: 1px solid #ddd;
+			background-color: rgb(128,128,128);
+			border: 1px solid rgb(128,128,128);
 			border-radius: 20px;
 		}
 		.keyword {
 			margin: 0;
-			padding: 5px;
+			padding: 0;
 			font-size: 16px;
 			color: #333;
 			text-align: center;
@@ -193,7 +194,7 @@ body,html {
     background: rgb(200, 200, 200);
 }
 #portfolio div h1 {
-    font-size:40px;
+    font-size:50px;
     background-image: linear-gradient(to left, #FF416C 0%, #FF4B2B 100%);
     -webkit-background-clip:text;
     background-clip:text;
@@ -205,6 +206,8 @@ body,html {
     animation: Gradient 20s ease infinite;
     font-family: 'Comfortaa', cursive;
 }
+
+
 #skills {
     margin:4vh 0px !important;
     padding:2vh 1vh !important;
