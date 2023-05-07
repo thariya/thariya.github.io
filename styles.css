@@ -354,7 +354,8 @@ body,html {
     }
     #tagline {
         width:70%;
-        font-size:2em;
+        font-size:1.5em;
+        display:None;
     }
     .btn_one {
         font-size:14px;
