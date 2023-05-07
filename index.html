@@ -15,45 +15,82 @@
     <div id="loading">
         <div id="spinner"></div>
     </div>
+
+    <div class="widget-box">
+		<div class="widget">
+			<h3>LinkedIn</h3>
+			<a href="https://www.linkedin.com/in/tharinduwarnakula-64566477/" target="_blank">
+				<img src="https://cdn.pixabay.com/photo/2017/08/22/11/56/linked-in-2668700_960_720.png" alt="LinkedIn">
+			</a>
+		</div>
+		<div class="widget">
+			<h3>GitHub</h3>
+			<a href="https://github.com/thariya" target="_blank">
+				<img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png" alt="GitHub">
+			</a>
+		</div>
+		<div class="widget">
+			<h3>YouTube</h3>
+			<a href="https://www.youtube.com/watch?v=WPo5uArot80" target="_blank">
+				<img src="https://cdn.pixabay.com/photo/2016/07/03/18/36/youtube-1495277_960_720.png" alt="YouTube">
+			</a>
+		</div>
+
+		<div class="widget">
+			<h3>Email</h3>
+			<a href="mailto: twarnakula@gmail.com" target="_blank">
+				<img src="https://cdn.pixabay.com/photo/2016/06/13/17/30/mail-1454731_960_720.png" alt="YouTube">
+			</a>
+		</div>
+
+		<div class="widget">
+			<h3>Resume</h3>
+			<a href="files/Resume.pdf" target="_blank">
+				<img src="https://images.assetsdelivery.com/compings_v2/vectorv/vectorv1905/vectorv190504549.jpg" alt="YouTube">
+			</a>
+		</div>
+	</div>
+
     <div id="header" class="animated slideInDown" style="animation-delay:1.8s;">
     <div id="title">tharindu warnakula</div><br>
+    <div id="subtitle">twarnakula@gmail.com</div><br>
     <div id="links">
-        <a href="#skills">skills</a>
-        <a href="#work" style="margin:0px 60px;">works</a>
-        <a href="#contact">contact</a>
+        <a href="#work">projects</a>
+        <a href="#skills" style="margin:0px 60px;">skills</a>
+        <a href="#contact">education</a>
     </div>
+
+
+
     </div>
 
     <center>
     <div id="middle">
         <div id="tagline" class="animated zoomIn" style="animation-delay:1.8s;">
-            Data Science - Statistical Analysis - Computational Physics<button class="btn_one">Projects</button>
+            Data Scientist - Statistical Analyst - Computational Physicist
         </div>
     </div>
     </center>
 
     <div id="portfolio">
-             <div id="skills">
-                 <h1>skills.</h1>   
-                 <div>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In bibendum tincidunt nulla, id semper mi cursus ac. Fusce turpis urna, condimentum sit amet dolor at, vulputate ultrices massa. Vestibulum non euismod nulla, eu pretium risus. Curabitur porta molestie vulputate. Sed tortor enim, rhoncus vel mauris vitae, elementum condimentum augue. Donec fermentum lobortis lectus, in feugiat turpis faucibus et. Pellentesque luctus metus vitae augue lobortis sagittis vitae sit amet enim. Morbi egestas velit ac arcu fermentum lacinia. Nullam eget hendrerit neque. Cras et laoreet ante. Vivamus condimentum euismod commodo. Nulla pulvinar, turpis vitae condimentum tempor, ex ex eleifend quam, et maximus sapien mi sed est. Donec elit mi, dictum nec magna quis, mollis sollicitudin ligula. Maecenas ullamcorper ante vel ullamcorper mollis. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-                        </p>
-                 </div> 
-             </div>
-         
               <div id="work">
-                 <h1>works.</h1>
+                 <h1>projects.</h1>
 
                  <div class="project">
-                 <h2>project title 1</h2>
-                 <div style="display: flex; align-items: center;">
-                    <img src="image.jpg" style="width: 40%;" alt="Image">
-                    <p style="width: 60%; margin-left: 20px;">Text goes here</p>
+                    <h2>Long Term Water Pipeline failure prediction using Random Survival Forests</h2>
+                    <div style="display: flex; align-items: center;">
+                        <img src="images/water_pipe.jpg" style="width: 20%; height: auto; object-fit: contain; margin-right: 20px;" alt="Thumbnail">
+                        <ul style="flex: 1; line-height: 3.5;">
+                            <li>Water suppliers incur significant costs for maintaining underground water pipelines. Most of these costs are incurred in performing maintenance and repair of pipes, the failures of which are unpredictable.</li>
+                            <li>We set out to suggests a model to be used by three water suppliers in three Australian states: Sydney Water, UnityWater and Western Water, to predict the failure of the pipes.</li>
+                            <li>We showed Random Survival Forests to be the best performing paradigm among a host of other random forest methods.</li>
+                            <li>Completed in collaboration with Data61 of CSIRO, Sydney Water, UnityWater and Western Water.</li>
+                        </ul>
+                    </div>
+                    <button class="btn_two" onclick="window.location.href='https://github.com/thariya/pipe_failure';" >visit project</button>
                 </div>
 
-                 <button class="btn_one">visit project</button>
-                </div>
+                <hr>
 
                 <div class="project">
                  <h2>project title 2</h2>
@@ -64,25 +101,42 @@
                 </div>
 
              </div>
+
+             <div id="skills">
+                 <h1>skills.</h1>
+                 <div class="keyword-box">
+                    <p class="keyword">Python</p>
+                </div>
+                <div class="keyword-box">
+                    <p class="keyword">R</p>
+                </div>
+                <div class="keyword-box">
+                    <p class="keyword">C++</p>
+                </div>
+                <div class="keyword-box">
+                    <p class="keyword">PHP</p>
+                </div>
+             </div>
          
               <div id="contact">
-                 <h1>contact.</h1> 
-                 <form>
-                     <input type="text" placeholder="name" required>
-                     <input type="email" placeholder="email" required><br>
-                     <textarea placeholder="your message" required rows="5"></textarea><br>
-                     <button class="btn_one">send</button>
-                 </form> 
-                 <div id="details">
-                    <a class="btn_social"><i class="fas fa-phone"></i></a>
-                    <a class="btn_social"><i class="fas fa-at"></i></a>
-                    <a class="btn_social"><i class="fab fa-twitter"></i></a>
-                    <a class="btn_social"><i class="fab fa-dribbble"></i></a>
-                 </div>   
+                <h1>education.</h1>
+                 <div class="education">
+                    <h3>Doctor of Philosophy (Computational Quantum Optics)</h3>
+                    <p><strong>Institution:</strong> Monash University (2016-2020)</p>
+                    <p>Researched theoretical and computational methods for understanding the nanoscale phenomena in plasmonic structures. Computational tools were coded and solved with the aid of supercomputers.</p>
+                </div>
+                <hr>
+                <div class="education">
+                    <h3>Bachelor of the Science of Engineering (Electronic and Telecommunication Engineering)</h3>
+                    <p><strong>Institution:</strong> University of Moratuwa, Sri Lanka (2010-2015)</p>
+                    <p>Graduated with First class Honours and a GPA of 3.84. Studied Electronic, robotics, algorithms and programming, communication theory, information theory, statistical methods and machine learning.</p>
+                </div>
+                <hr>
+
              </div>
     </div>
     <div id="footer">
-        made on earth by a human <br><br> <a href="https://imfunniee.github.io">imfunniee</a>
+        Created by customising a template made freely available by <br><br> <a href="https://imfunniee.github.io">imfunniee</a>.
     </div>
 <script src="scripts.js" type="text/javascript"></script>
 </body>

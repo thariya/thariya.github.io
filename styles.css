@@ -3,8 +3,8 @@ body,html {
     margin:0px;
     font-family: 'Comfortaa', cursive;
     font-weight:bold;
-    color:#fff;
-    background:rgb(0, 0, 0);
+    color:#000;
+    background:rgb(255, 255, 255);
     scroll-behavior: smooth;
 }
 #loading {
@@ -41,6 +41,89 @@ body,html {
 #header div {
     display:block;
 }
+
+.social-media-widget {
+			position: fixed;
+			top: 50%;
+			right: 0;
+			transform: translateY(-50%);
+			background-color: #f7f7f7;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+			padding: 10px;
+			z-index: 9999;
+		}
+		.social-media-widget a {
+			display: block;
+			margin-bottom: 10px;
+			color: #333;
+			text-align: center;
+			text-decoration: none;
+		}
+		.social-media-widget a img {
+			display: block;
+			width: 50px;
+			height: 50px;
+			margin: 0 auto;
+		}
+
+.widget-box {
+			position: fixed;
+			top: 50%;
+			transform: translateY(-50%);
+			right: 0;
+			width: 100px;
+			background-color: transparent;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+			overflow-y: scroll;
+			transition: all 0.3s ease-in-out;
+		}
+		.widget-box:hover {
+			width: 150px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+			cursor: pointer;
+		}
+		.widget {
+			margin: 10px;
+			padding: 5px;
+			background-color: #f2f2f2;
+			border: 1px solid #ddd;
+			border-radius: 5px;
+		}
+		.widget h3 {
+			margin: 0;
+			padding: 0;
+			font-size: 14px;
+			font-weight: bold;
+			color: #333;
+			text-align: center;
+		}
+		.widget img {
+			display: block;
+			margin: 0 auto;
+			width: 50px;
+			height: 50px;
+			object-fit: cover;
+			border-radius: 50%;
+		}
+
+
+.keyword-box {
+			display: inline-block;
+			margin: 10px;
+			padding: 10px;
+			background-color: #fff;
+			border: 1px solid #ddd;
+			border-radius: 20px;
+		}
+		.keyword {
+			margin: 0;
+			padding: 5px;
+			font-size: 16px;
+			color: #333;
+			text-align: center;
+		}
+
+
 #title {
     font-size:60px;
     background-image: linear-gradient(to left, #FF416C 0%, #FF4B2B 100%);
@@ -54,7 +137,23 @@ body,html {
     animation: Gradient 20s ease infinite;
     font-family: 'Comfortaa', cursive;
 }
+
+#subtitle {
+    font-size:30px;
+    background-image: linear-gradient(to left, #FF416C 0%, #FF4B2B 100%);
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color: transparent;
+    background-size:500% 500% !important;
+    -webkit-animation: Gradient 20s ease infinite;
+    -moz-animation: Gradient 20s ease infinite;
+    -o-animation: Gradient 20s ease infinite;
+    animation: Gradient 20s ease infinite;
+    font-family: 'Comfortaa', cursive;
+}
+
 #links {
+    font-size:50px;
     margin:40px 0px;
     transition:0.6s ease-in-out;
     color:#fff;
@@ -69,11 +168,12 @@ body,html {
 }
 #links a:hover {
     border-bottom:2px solid #fff;
+    color: #FF4B2B;
 }
 #middle {
     width:100%;
     height:80vh;
-    background:linear-gradient(0deg,rgba(0,0,0,1),rgba(0,0,0,0)),url("images/wallpaper.jpg") center center fixed;
+    background:linear-gradient(0deg,rgba(0,0,0,1),rgba(0,0,0,0)), linear-gradient(180deg,rgba(0,0,0,1),rgba(0,0,0,0)), url("images/wallpaper.jpg") center center fixed;
     background-size:100% auto;
     background-repeat:no-repeat;
     color:white;
@@ -90,6 +190,7 @@ body,html {
 #portfolio {
     width:80%;
     padding:2% 10%;
+    background: rgb(200, 200, 200);
 }
 #portfolio div h1 {
     font-size:40px;
@@ -106,16 +207,32 @@ body,html {
 }
 #skills {
     margin:4vh 0px !important;
-    padding:2vh 0px !important;
+    padding:2vh 1vh !important;
+    border-radius: 10px;
 }
 #work {
     margin:4vh 0px !important;
-    padding:2vh 0px !important;
+    padding:2vh 1vh !important;
+    border-radius: 10px;
 }
+
+
 #contact {
     margin:4vh 0px !important;
-    padding:2vh 0px !important;
+    padding:2vh 1vh !important;
+    border-radius: 10px;
 }
+
+#work:hover{
+    background: rgb(172,172,172);
+}
+#skills:hover{
+    background: rgb(172,172,172);
+}
+#contact:hover{
+    background: rgb(172,172,172);
+}
+
 #contact form {
     width:100%;
 }
